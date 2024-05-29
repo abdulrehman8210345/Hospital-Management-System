@@ -30,6 +30,12 @@ app.use(
   })
 );
 
+app.get("/",(req,res)=>{
+  res.json({
+      message:"Welcome to Hospital Management System"
+  })
+})
+
 app.use("/api/v1/user",userRouter);
 app.use("/api/v1/message",messageRouter);
 app.use("/api/v1/appointment",appointmentRouter);
