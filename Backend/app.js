@@ -32,7 +32,7 @@ app.use(
 
 app.get("/",(req,res)=>{
   res.json({
-      message:"Welcome to Hospital Management System"
+      message:"Welcome to Hospital Management System, server is running"
   })
 })
 
